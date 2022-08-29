@@ -25,3 +25,11 @@ jobs:
       - name: Directory Bash
         run: pwd
         shell: bash
+
+  run-shell-commands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Java version
+        run: |
+          which java
+          java -version
